@@ -16,7 +16,7 @@ app.add_middleware(
 
 
 @app.get("/name/{my_name}")
-def read_item(my_name: str, my_surname: str):
+def read_item(my_name: str):
     return {"name": my_name}
 
 
