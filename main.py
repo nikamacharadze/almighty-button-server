@@ -16,8 +16,9 @@ app.add_middleware(
 
 
 @app.get("/chat/{my_name}/{text}")
+a = {}
 def read_item(my_name: str, text: str):
-    a = {my_name: text}
+    a[my_name] = text
     return a
 
 
