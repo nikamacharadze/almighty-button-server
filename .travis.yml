@@ -6,4 +6,4 @@ before_script:
   - gem install dpl
 
 script:
-  - dpl --skip-cleanup --provider=heroku --app=almighty-button-server-nika --app-key=885a6c46-5927-4bdd-9be0-6f14079866e8
+  - dpl --skip-cleanup --provider=heroku --app=almighty-button-server-nika --api-key=885a6c46-5927-4bdd-9be0-6f14079866e8
