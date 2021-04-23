@@ -16,17 +16,18 @@ app = FastAPI()
 
 # a = {}
 #
+#
 # @app.get("/chat/{my_name}/{text}")
 # def read_item(my_name: str, text: str):
 #     a[my_name] = text
 #     return a
-#
-#
+
+
 # @app.get("/name/{my_name}")
 # def read_item(my_name: str):
 #     return {"name": my_name}
 
 
-@app.get("/")
-async def root():
-    return {"message": "zd kowik"}
+@app.get("/{name}")
+async def root(name: str):
+    return {"message": 'zd ' + name}
